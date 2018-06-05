@@ -14,11 +14,11 @@ import java.util.List;
 public class GoogleAnalyticsBridgePackage implements ReactPackage {
 
     public GoogleAnalyticsBridgePackage(String trackingId) {
-        this(null, trackingId);
+        _trackingId = trackingId;
     }
 
     public GoogleAnalyticsBridgePackage() {
-        this(null, null);
+        this(null);
     }
 
     private String _trackingId;
