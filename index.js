@@ -1,13 +1,11 @@
 import { GoogleAnalyticsBackwardsCompability } from './src/GoogleAnalyticsBackwardsCompability';
 import { GoogleAnalyticsTracker } from './src/GoogleAnalyticsTracker';
 import { GoogleAnalyticsSettings } from './src/GoogleAnalyticsSettings';
-import { GoogleTagManager } from './src/GoogleTagManager';
 import { GoogleAnalyticsBridge } from './src/NativeBridges';
 
 export {
   GoogleAnalyticsTracker,
   GoogleAnalyticsSettings,
-  GoogleTagManager,
 };
 
 /**
