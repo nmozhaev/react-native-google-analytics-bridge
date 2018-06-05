@@ -1,4 +1,3 @@
-import { GoogleTagManager } from './GoogleTagManager';
 import { GoogleAnalyticsSettings } from './GoogleAnalyticsSettings';
 import { GoogleAnalyticsTracker } from './GoogleAnalyticsTracker';
 
@@ -10,8 +9,6 @@ function createNewTracker(trackerId, customDimensionsKeysIndexMap) {
  * Backwards compatibility for static implementation
  */
 export class GoogleAnalyticsBackwardsCompability {
-  // GoogleTagManager was static property of GoogleAnalytics class in previous version.
-  static GoogleTagManager = GoogleTagManager;
 
   constructor(trackerId, customDimensionsKeysIndexMap) {
     this.tracker = createNewTracker(trackerId, customDimensionsKeysIndexMap);

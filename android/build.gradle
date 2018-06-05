@@ -1,7 +1,5 @@
 apply plugin: 'com.android.library'
 
-def DEFAULT_GOOGLE_PLAY_SERVICES_VERSION    = "+"
-
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
@@ -19,8 +17,6 @@ android {
 }
 
 dependencies {
-  def googlePlayServicesVersion = project.hasProperty('googlePlayServicesVersion') ? project.googlePlayServicesVersion : DEFAULT_GOOGLE_PLAY_SERVICES_VERSION
     compile 'com.facebook.react:react-native:+'
-    compile "com.google.android.gms:play-services-analytics:$googlePlayServicesVersion"
-
+    compile "com.google.android.gms:play-services-analytics:15.0.2"
 }
